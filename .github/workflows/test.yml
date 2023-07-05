@@ -1,0 +1,18 @@
+name: Update HTML Document
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  update-html:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+
+      - name: Modify HTML Document
+        run: |
+          sed -i 's/SEARCH_TEXT/REPLACE_TEXT/g' ./file.html
