@@ -15,4 +15,4 @@ jobs:
 
       - name: Modify HTML Document
         run: |
-          sed -i 's/SEARCH_TEXT/REPLACE_TEXT/g' /file.html
+          sed -i 's/SEARCH_TEXT/REPLACE_TEXT/g' ./file.html
